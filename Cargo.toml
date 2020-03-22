@@ -1,0 +1,11 @@
+[package]
+name = "parity-util-mem-duplicates"
+version = "0.1.0"
+authors = ["Andronik Ordian <write@reusable.software>"]
+edition = "2018"
+
+[dependencies]
+parity-util-mem = { version = "0.5", features = ["jemalloc-global"], default-features = false }
+pum = { package = "parity-util-mem", version = "0.6", default-features = false }
+memory-db = "0.20.0"
+keccak-hasher = "0.15.2"
